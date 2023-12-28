@@ -30,7 +30,7 @@ export const fetchNewAlbums = async () => {
          console.error(e)
     }
  }
- export const fecthFilters = async () => {
+ export const fetchFilters = async () => {
     try{
          const response = await axios ("https://qtify-backend-labs.crio.do/genres")
          return response.data;

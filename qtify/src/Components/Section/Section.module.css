@@ -18,3 +18,7 @@
     cursor: pointer;
     color: green;
 }
+
+.filterWrapper{
+    margin-top: 15px;
+}
