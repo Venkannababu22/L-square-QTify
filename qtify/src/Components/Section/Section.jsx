@@ -4,10 +4,9 @@ import styles from "./Section.module.css"
 import { CircularProgress } from "@mui/material";
 import Carousel from "../Carousel/Carousel"
 import Filters from "../Filters/Filters"
-// import { fetchSongs } from "../../Api/Api";
 
 export default function Section({title, data, filterSource, type}){
-    // console.log(title)
+   
     const [filters, setFilters] = useState([{key: "all", label: "all"}]);
     const [selectedFilterIndex, setSelectedFilterIndex] = useState(0);
     const [carouselData, setCarouselData] = useState(false);
@@ -25,7 +24,6 @@ export default function Section({title, data, filterSource, type}){
             })
         }
     }, [])
-    // console.log(filters)
 
     const showFilters = filters.length > 1;
     const cardsToRender = data.filter((card) => 
